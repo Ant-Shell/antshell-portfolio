@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Header from '../components/header'
-import Hero from '../components/hero'
+import Header from '@components/header'
+import Hero from '@components/hero'
+import About from '@components/about'
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -11,10 +12,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className='snap-y snap-mandatory overflow-scroll'>
         <Header />
         <Hero />
+        <About />
       </main>
     </>
   )
 }
+
+export default Home
