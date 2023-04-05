@@ -3,11 +3,11 @@ import image from '../assets/felicia-buitenwerf-_z1fydm6azE-unsplash.jpg'
 
 const About = () => {
   return (
-    <section className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-start">
+    <section className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <div className='flex justify-center'>
         <Image 
         src={image}
-        alt='Felicia Buitenwerf'
+        alt='Felicia Buitenwerf_You Are Enough'
         width={640}
         height={427}
         />
