@@ -1,7 +1,7 @@
 
 const Header = () => {
   return (
-    <header className="h-24 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center">
+    <header className="h-24 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center snap-start">
       <div className="flex justify-evenly">
         <h1>About</h1>
         <h1>Experience</h1>
