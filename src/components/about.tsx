@@ -15,21 +15,31 @@ const About = () => {
       </div>
       <div className='py-8'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>
+        “Take a chance on yourself”.<br/>
+        <br/>
+        These were the words that went through my mind, 
+        while making the career decision to pivot into Frontend Engineering.
         </p>
         <br/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>
+        This is not the first time I have taken a new path in life. 
+        After working in retail and customer service, I went back to school as an adult<br/> 
+        and obtained my degree in Computer Information systems. 
+        I then went on to be a systems administrator for nearly a decade.<br/> 
+        However, once again listening to my inner voice and attending the 
+        Turing School of Software and Design <br/> 
+        led me on my current journey - in which I am grateful.
         </p>
         <br/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>
+        As a software developer, I enjoy collaborating to take a project from idea to reality,<br/> 
+        and the process of building new applications has helped me gain a new perspective on life itself.<br/> 
+        Success happens through research, planning, execution, failure and iteration.<br/> 
+        Every challenge is an opportunity to learn from ourselves and others.
+        </p>
+        <br/>
+        <p>
+        We are all capable of doing great things - sometimes we just need to take a chance.
         </p>
       </div>
     </section>
