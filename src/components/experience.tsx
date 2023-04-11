@@ -1,7 +1,7 @@
 
 const Experience = () => {
   return (
-    <section className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
+    <section id="experience" className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <div className="py-8">
         <h2 className='text-4xl py-8'>Experience</h2>
         <h3 className="text-xl">

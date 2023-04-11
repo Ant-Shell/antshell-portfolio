@@ -1,7 +1,7 @@
 
 const Projects = () => {
   return (
-    <section className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
+    <section id="projects" className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <h2 className='text-4xl py-8'>Projects</h2> {/* Array of mapped objects, swipeable */}
       <div className="flex justify-evenly">
         <div>
