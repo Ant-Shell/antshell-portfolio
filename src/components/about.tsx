@@ -3,7 +3,7 @@ import image from '../assets/felicia-buitenwerf-_z1fydm6azE-unsplash.jpg'
 
 const About = () => {
   return (
-    <section className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
+    <section id='about' className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <h2 className='text-4xl py-8'>About Me</h2>
       <div className='flex justify-center'>
         <Image 

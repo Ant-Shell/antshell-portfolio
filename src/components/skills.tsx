@@ -1,7 +1,7 @@
 
 const Skills = () => {
   return (
-    <section className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
+    <section id="skills" className="h-screen w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <h2 className='text-4xl py-8'>Skills</h2>
       <div className="py-8 grid grid-flow-col grid-rows-5 gap-4"> {/* Array of mapped icons */}
         <p>Skill_1</p>
