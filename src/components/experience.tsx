@@ -1,46 +1,39 @@
+import useSWR from 'swr'
+import fetcher from '@utilities/apiCalls'
+import ExperienceCard from './experienceCard'
+
+type ExperienceData = {
+  id: number
+  name: string
+  location: string
+  duration: string
+  overview: Array<string>
+}[]
 
 const Experience = () => {
+  const { data, error, isLoading } = useSWR<ExperienceData>('/api/experienceInfo', fetcher)
+
+  const experienceList = data?.map(experience => {
+    const {id, name, location, duration, overview} = experience
+
+    return (
+      <ExperienceCard
+      id={id}
+      name={name}
+      location={location}
+      duration={duration}
+      overview={overview}
+      key={id}
+      />
+    )
+  })
+
   return (
     <section id="experience" className="h-[55rem] w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <div className="py-8">
         <h2 className='text-4xl py-8'>Experience</h2>
         <div className="py-8">
-          <section> {/* Turn these into cards and map from array of objects - make swipe-able on x axis*/}
-            <h4>First Workplace Job Title</h4>
-            <p>First Workplace Name</p>
-            <p>Location</p>
-            <p>Duration</p>
-            <p>Overview:</p>
-            <ul>
-              <li>I did this</li>
-              <li>I did this</li>
-              <li>I did this</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Second Workplace Job Title</h4>
-            <p>Second Workplace Name</p>
-            <p>Location</p>
-            <p>Duration</p>
-            <p>Overview:</p>
-            <ul>
-              <li>I did this</li>
-              <li>I did this</li>
-              <li>I did this</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Third Workplace Job Title</h4>
-            <p>Third Workplace Name</p>
-            <p>Location</p>
-            <p>Duration</p>
-            <p>Overview:</p>
-            <ul>
-              <li>I did this</li>
-              <li>I did this</li>
-              <li>I did this</li>
-            </ul>
-          </section>
+          {experienceList}
         </div>
       </div>
     </section>
