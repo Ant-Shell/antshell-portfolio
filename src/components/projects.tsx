@@ -7,7 +7,6 @@ const Projects = () => {
         <div>
           <h4>Project 1 Title</h4>
           <p>Description</p>
-          <p>Tech Stack</p>
           <p>Image</p>
           <p>Deploy Link</p>
           <p>GitHub Repo</p>
@@ -15,7 +14,6 @@ const Projects = () => {
         <div>
           <h4>Project 2 Title</h4>
           <p>Description</p>
-          <p>Tech Stack</p>
           <p>Image</p>
           <p>Deploy Link</p>
           <p>GitHub Repo</p>
@@ -23,7 +21,6 @@ const Projects = () => {
         <div>
           <h4>Project 3 Title</h4>
           <p>Description</p>
-          <p>Tech Stack</p>
           <p>Image</p>
           <p>Deploy Link</p>
           <p>GitHub Repo</p>
@@ -31,7 +28,6 @@ const Projects = () => {
         <div>
           <h4>Project 4 Title</h4>
           <p>Description</p>
-          <p>Tech Stack</p>
           <p>Image</p>
           <p>Deploy Link</p>
           <p>GitHub Repo</p>
