@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react"
+import { FC } from "react"
 
 type Props = {
   id: number
@@ -8,7 +8,7 @@ type Props = {
   overview: Array<string>
 }
 
-const ExperienceCard: FunctionComponent<Props> = ({name, location, duration, overview}) => {
+const ExperienceCard: FC<Props> = ({name, location, duration, overview}) => {
   const overViewList = overview.map((item, index) => {
 
     return (
