@@ -13,10 +13,10 @@ const Header = () => {
   return (
     <>
     <header className="md:hidden h-28 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center snap-start">
-      <div className='flex justify-start px-8' onClick={toggleMenu}>
+      <div className='flex justify-start px-8 hover:cursor-pointer' onClick={toggleMenu}>
       {<GiHamburgerMenu className='w-10 h-10'/>}
       </div>
-      {menuVisible ? <div className='p-5 flex justify-evenly'>
+      {menuOptionVisibility ? <div className='p-5 flex justify-evenly'>
         <Link href="#about">About</Link>
         <Link href="#experience">Experience</Link>
         <Link href="#skills">Skills</Link>
