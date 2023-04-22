@@ -1,6 +1,6 @@
+import React, {useState} from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross1 } from 'react-icons/rx'
-import React, {useState} from 'react'
 import { animate } from "framer-motion"
 
 import Link from 'next/link'
