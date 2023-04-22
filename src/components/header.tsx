@@ -3,11 +3,11 @@ import React, {useState} from 'react'
 
 import Link from 'next/link'
 const Header = () => {
-  const [menuVisible, setMenuVisible] = useState<boolean>(false)
+  const [menuOptionVisibility, setMenuOptionVisibility] = useState<boolean>(false)
 
   const toggleMenu = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault()
-    setMenuVisible(!menuVisible)
+    setMenuOptionVisibility(!menuOptionVisibility)
   }
 
   return (
