@@ -5,7 +5,8 @@ const Hero = () => {
   return (
     <section id="home" className='h-[55rem] w-screen bg-[#293744] text-[#a89fa3] text-center flex flex-col
     items-center justify-evenly snap-center'>
-      <div className='h-[33.2rem] w-[30rem] rounded-full'>
+      <div className='h-[18rem] w-[16rem] md:h-[25rem] md:w-[22rem]
+      lg:h-[31rem] lg:w-[28rem] xl:h-[37rem] xl:w-[34rem] rounded-full'>
         <Image 
         src={headshot}
         alt="Ant-Shell headshot"
