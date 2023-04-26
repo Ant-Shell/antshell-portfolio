@@ -13,7 +13,7 @@ const About = () => {
         className='xl:h-full'
         />
         </div>
-        <div className='xl:px-8 basis-1/2 flex-1'>
+        <div className='p-8 xl:p-0 basis-1/2 flex-1'>
           <p>
           “Take a chance on yourself”.<br/>
           <br/>
