@@ -20,12 +20,11 @@ const ExperienceCard: FC<Props> = ({name, role, location, duration, overview}) =
   })
 
   return (
-    <section>
-      <h3>{role}</h3>
-      <p>{name}</p>
+    <section className="text-left">
+      <h3>{name}</h3>
+      <p>{role}</p>
       <p>{location}</p>
       <p>{duration}</p>
-      <p>Overview:</p>
       <ul>
         {overViewList}
       </ul>
