@@ -3,12 +3,13 @@ import { FC } from "react"
 type Props = {
   id: number
   name: string
+  role: string
   location: string
   duration: string
   overview: Array<string>
 }
 
-const ExperienceCard: FC<Props> = ({name, location, duration, overview}) => {
+const ExperienceCard: FC<Props> = ({name, role, location, duration, overview}) => {
   const overViewList = overview.map((item, index) => {
 
     return (
@@ -20,7 +21,8 @@ const ExperienceCard: FC<Props> = ({name, location, duration, overview}) => {
 
   return (
     <section>
-      <h3>{name}</h3>
+      <h3>{role}</h3>
+      <p>{name}</p>
       <p>{location}</p>
       <p>{duration}</p>
       <p>Overview:</p>
