@@ -32,7 +32,7 @@ const Experience = () => {
     <section id="experience" className="h-[55rem] w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <div className="py-8">
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Experience</h2>
-        <div className="py-8">
+        <div className="py-8 flex justify-around">
           {experienceList}
         </div>
       </div>
