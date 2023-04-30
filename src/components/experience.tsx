@@ -75,7 +75,7 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" className="h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] w-screen
+    <section id="experience" className="h-[25rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] w-screen
     bg-[#293744] text-[#a89fa3] text-center snap-center">
       <div className="py-8">
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Experience</h2>
