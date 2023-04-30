@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import { StaticImageData } from 'next/image'
+import { RxCross1 } from 'react-icons/rx'
 
 type Props = {
   id: number
@@ -25,7 +26,7 @@ const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overvi
   return (
     <section className="text-left">
       <div className="flex justify-end">
-        <button className="mr-5" onClick={(e) => showSingleExperience(e)}>X</button>
+        <button className="mr-5" onClick={(e) => showSingleExperience(e)}><RxCross1 className='w-7 h-7'/></button>
       </div>
       <div className="px-5">
         <h3>{name}</h3>
