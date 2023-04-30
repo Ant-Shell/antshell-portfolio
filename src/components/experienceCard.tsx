@@ -1,4 +1,4 @@
-import { FC } from "react"
+import React, { FC } from "react"
 import { StaticImageData } from 'next/image'
 
 type Props = {
@@ -9,9 +9,10 @@ type Props = {
   duration: string
   logo: StaticImageData
   overview: Array<string>
+  showSingleExperience: (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 
-const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overview}) => {
+const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overview, showSingleExperience}) => {
   const overViewList = overview.map((item, index) => {
 
     return (
@@ -24,7 +25,7 @@ const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overvi
   return (
     <section className="text-left">
       <div className="flex justify-end">
-        <button>X</button>
+        <button onClick={(e) => showSingleExperience(e)}>X</button>
       </div>
       <div>
         <h3>{name}</h3>
