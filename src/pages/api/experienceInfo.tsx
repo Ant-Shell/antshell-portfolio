@@ -3,6 +3,8 @@ import { StaticImageData } from 'next/image'
 import HA_Logo from '../../assets/HA_Logo.png'
 import G_Logo from '../../assets/G_Logo.jpeg'
 import CL_Logo from '../../assets/CL_Logo.png'
+import T_Logo from '../../assets/T_Logo.png'
+import MSU_Logo from '../../assets/MSU_Logo.png'
 
 type Data = {
   id: number
@@ -22,6 +24,19 @@ export default function handler(
     [
       {
         id: 1,
+        name: "Turing School of Software & Design",
+        role: "Software Engineering Student",
+        location: "Denver, CO",
+        duration: "May 2022 - Jan 2023",
+        logo: T_Logo,
+        overview: [
+          "- Implemented React, JavaScript, HTML and CSS through solo and team-based projects",
+          "- Worked closely with teammates to wireframe designs and map out user flows with collaboration tools such as Miro and Figma",
+          "- Utilized CI/CD workflows to streamline Cypress E2E testing and catch potential issues before promoting code to production"
+        ]
+      },
+      {
+        id: 2,
         name: "Chainlink Labs",
         role: "Network and Systems Administrator",
         location: "Remote",
@@ -34,7 +49,7 @@ export default function handler(
         ],
       },
       {
-        id: 2,
+        id: 3,
         name: "Gensler",
         role: "Server Administrator",
         location: "Denver, CO",
@@ -47,16 +62,27 @@ export default function handler(
         ]
       },
       {
-        id: 3,
+        id: 4,
         name: "HomeAdvisor",
         role: "Systems Administrator",
-        location: "Golder, CO",
+        location: "Golden, CO",
         duration: "Feb 2012 - Feb 2019",
         logo: HA_Logo,
         overview: [
           "- Ensured infrastructure remained secure and up to date through regular maintenance",
           "- Investigated, evaluated and deployed solutions to meet business needs",
           "- Resolved system issues quickly and efficiently"
+        ]
+      },
+      {
+        id: 5,
+        name: "Metropolitan State University of Denver",
+        role: "Student",
+        location: "Denver, CO",
+        duration: "May 2010 - Dec 2016",
+        logo: MSU_Logo,
+        overview: [
+          "- Bachelor's Degree, Computer Information Systems"
         ]
       },
     ]
