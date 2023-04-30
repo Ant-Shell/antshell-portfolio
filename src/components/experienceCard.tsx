@@ -29,10 +29,10 @@ const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overvi
         <button className="mr-5" onClick={(e) => showSingleExperience(e)}><RxCross1 className='w-7 h-7'/></button>
       </div>
       <div className="px-5 text-base md:text-lg lg:text-xl xl:text-2xl">
-        <h3>{name}</h3>
-        <p>{role}</p>
+        <h3 className="font-bold">{name}</h3>
+        <p className="font-medium">{role}</p>
         <p>{location}</p>
-        <p>{duration}</p>
+        <p className="font-light">{duration}</p>
         <ul>
           {overViewList}
         </ul>
