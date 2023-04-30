@@ -29,17 +29,23 @@ const Experience = () => {
   const { data, error, isLoading } = useSWR<ExperienceData>('/api/experienceInfo', fetcher)
   const [description, setDescription] = useState<SingleExperienceDetails | undefined>(undefined)
 
-  const handleClick = (e:React.MouseEvent<HTMLDivElement, MouseEvent>, id:number):void => {
+  const showCompanyLogos = (e:React.MouseEvent<HTMLDivElement, MouseEvent>, id:number):void => {
     e.preventDefault()
     const expinfo = data?.find(element => element.id === id)
     setDescription(expinfo)
   }
 
+  const showSingleExperience = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>):void => {
+    e.preventDefault()
+    setDescription(undefined)
+  }
+
+
   const logoList = data?.map(experience => {
     const { id, name, logo } = experience
 
     return (
-      <div key={id} className='hover:cursor-pointer' onClick={(e)=> handleClick(e, id)}>
+      <div key={id} className='hover:cursor-pointer' onClick={(e)=> showCompanyLogos(e, id)}>
         <Image
         src={logo}
         alt={name + "logo"}
@@ -62,6 +68,7 @@ const Experience = () => {
         duration={duration}
         logo={logo}
         overview={overview}
+        showSingleExperience={showSingleExperience}
         key={id}
       />
     )
