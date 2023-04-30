@@ -25,9 +25,9 @@ const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overvi
   return (
     <section className="text-left">
       <div className="flex justify-end">
-        <button onClick={(e) => showSingleExperience(e)}>X</button>
+        <button className="mr-5" onClick={(e) => showSingleExperience(e)}>X</button>
       </div>
-      <div>
+      <div className="px-5">
         <h3>{name}</h3>
         <p>{role}</p>
         <p>{location}</p>
