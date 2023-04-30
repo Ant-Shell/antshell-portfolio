@@ -30,9 +30,9 @@ export default function handler(
         duration: "May 2022 - Jan 2023",
         logo: T_Logo,
         overview: [
-          "- Implemented React, JavaScript, HTML and CSS through solo and team-based projects",
-          "- Worked closely with teammates to wireframe designs and map out user flows with collaboration tools such as Miro and Figma",
-          "- Utilized CI/CD workflows to streamline Cypress E2E testing and catch potential issues before promoting code to production"
+          "- Front End Engineering Certificate",
+          "- 1700 hours of programming experience",
+          "- Intensive 7-month, 80 hour a week ACCET accredited software development program"
         ]
       },
       {
@@ -43,9 +43,8 @@ export default function handler(
         duration: "May 2021 - Aug 2021",
         logo: CL_Logo,
         overview: [
-          "- Managed and maintained decentralized blockchain node applications in cloud environment",
-          "- Ensured 24/7 performance of nodes through shift-based on-call rotation",
-          "- Utilized AWS, Docker, Grafana and Prometheus for deployments and monitoring"
+          "- Managed and maintained decentralized blockchain node applications in cloud-based environments",
+          "- Ensured 24/7 performance of oracle nodes through shift-based on-call rotation"
         ],
       },
       {
@@ -58,7 +57,7 @@ export default function handler(
         overview: [
           "- Administered server life-cycles across multiple co-locations",
           "- Improved existing technical infrastructure",
-          "- Partnered with development team to successfully launch code releases"
+          "- Partnered with development team to successfully deploy code releases"
         ]
       },
       {
@@ -69,9 +68,8 @@ export default function handler(
         duration: "Feb 2012 - Feb 2019",
         logo: HA_Logo,
         overview: [
-          "- Ensured infrastructure remained secure and up to date through regular maintenance",
-          "- Investigated, evaluated and deployed solutions to meet business needs",
-          "- Resolved system issues quickly and efficiently"
+          "- Ensured infrastructure integrity via regular maintenance, troubleshooting and issue remediation",
+          "- Researched, evaluated and deployed new hardware and software"
         ]
       },
       {
