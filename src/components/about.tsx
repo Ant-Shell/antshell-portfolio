@@ -25,14 +25,14 @@ const About = () => {
           This is not the first time I have taken a new path in life. 
           After working in retail and customer service, I went back to school as an adult
           and obtained my degree in Computer Information systems. 
-          I then went on to be a systems administrator for nearly a decade.
+          I then went on to be a Systems Administrator for nearly a decade.
           However, once again listening to my inner voice and attending the 
-          Turing School of Software and Design
+          Turing School of Software & Design
           led me on my current journey - in which I am grateful.
           </p>
           <br/>
           <p>
-          As a software developer, I enjoy collaborating to take a project from idea to reality,
+          As a Software Developer, I enjoy collaborating to take a project from idea to reality,
           and the process of building new applications has helped me gain a new perspective on life itself.
           Success happens through research, planning, execution, failure and iteration.
           Every challenge is an opportunity to learn from ourselves and others.
