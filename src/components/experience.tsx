@@ -49,8 +49,8 @@ const Experience = () => {
         <Image
         src={logo}
         alt={name + "logo"}
-        className='h-16 w-16 md:h-40 md:w-40
-          lg:h-52 lg:w-52 xl:h-64 xl:w-64'
+        className='h-28 w-28 md:h-36 md:w-36
+          lg:h-48 lg:w-48 xl:h-60 xl:w-60 mt-2'
         />
       </div>
     )
@@ -75,11 +75,11 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" className="h-[25rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] w-screen
+    <section id="experience" className="h-[30rem] md:h-[35rem] lg:h-[40rem] xl:h-[45rem] w-screen
     bg-[#293744] text-[#a89fa3] text-center snap-center">
       <div className="py-8">
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Experience</h2>
-        <div className="py-8 flex justify-around">
+        <div className="flex justify-around flex-wrap">
           {description === undefined ?
             logoList
             :
