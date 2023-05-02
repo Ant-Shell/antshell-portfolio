@@ -16,36 +16,36 @@ export default function handler(
   res.status(200).json([
     {
       id: 1,
-      name: "Project 1 Title",
-      description: "A cool project 1",
+      name: "A&W Movie Time!",
+      description: "A movie information site",
       image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      deployLink: "https://rancid-tomatillos-ivory.vercel.app/",
+      githubRepo: "https://github.com/Ant-Shell/rancid-tomatillos"
 
     },
     {
       id: 2,
-      name: "Project 2 Title",
-      description: "A cool project 2",
+      name: "Dungeons & Documents",
+      description: "A D&D character creator and monster manual",
       image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      deployLink: "https://ant-shell.github.io/dnd-stretch-tech/",
+      githubRepo: "https://github.com/Ant-Shell/dnd-stretch-tech"
     },
     {
       id: 3,
-      name: "Project 3 Title",
-      description: "A cool project 3",
+      name: "Eat Local",
+      description: "A search site for local eateries",
       image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      deployLink: "https://eatlocal.vercel.app/",
+      githubRepo: "https://github.com/Ant-Shell/eatlocal"
     },
     {
       id: 4,
-      name: "Project 4 Title",
-      description: "A cool project 4",
+      name: "The Fighting Game Compendium",
+      description: "A fighting game info site",
       image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      deployLink: "https://fighting-game-compendium.vercel.app/",
+      githubRepo: "https://github.com/Ant-Shell/fighting-game-compendium"
     },
   ]
   )
