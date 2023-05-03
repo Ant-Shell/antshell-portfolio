@@ -1,10 +1,16 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { StaticImageData } from 'next/image'
+import AW_Preview from '../../assets/A&W.png'
+import DD_Preview from '../../assets/D&D.png'
+import EL_Preview from '../../assets/EatLocal.png'
+import FGC_Preview from '../../assets/FGC.png'
+
 
 type Data = {
   id: number
   name: string
   description: string
-  image: string
+  image: StaticImageData
   deployLink: string
   githubRepo: string
 }[]
@@ -18,7 +24,7 @@ export default function handler(
       id: 1,
       name: "A&W Movie Time!",
       description: "A movie information site",
-      image: "https://picsum.photos/200/300",
+      image: AW_Preview,
       deployLink: "https://rancid-tomatillos-ivory.vercel.app/",
       githubRepo: "https://github.com/Ant-Shell/rancid-tomatillos"
 
@@ -27,7 +33,7 @@ export default function handler(
       id: 2,
       name: "Dungeons & Documents",
       description: "A D&D character creator and monster manual",
-      image: "https://picsum.photos/200/300",
+      image: DD_Preview,
       deployLink: "https://ant-shell.github.io/dnd-stretch-tech/",
       githubRepo: "https://github.com/Ant-Shell/dnd-stretch-tech"
     },
@@ -35,7 +41,7 @@ export default function handler(
       id: 3,
       name: "Eat Local",
       description: "A search site for local eateries",
-      image: "https://picsum.photos/200/300",
+      image: EL_Preview,
       deployLink: "https://eatlocal.vercel.app/",
       githubRepo: "https://github.com/Ant-Shell/eatlocal"
     },
@@ -43,7 +49,7 @@ export default function handler(
       id: 4,
       name: "The Fighting Game Compendium",
       description: "A fighting game info site",
-      image: "https://picsum.photos/200/300",
+      image: FGC_Preview,
       deployLink: "https://fighting-game-compendium.vercel.app/",
       githubRepo: "https://github.com/Ant-Shell/fighting-game-compendium"
     },
