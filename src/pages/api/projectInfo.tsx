@@ -1,10 +1,16 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { StaticImageData } from 'next/image'
+import AW_Preview from '../../assets/A&W.png'
+import DD_Preview from '../../assets/D&D.png'
+import EL_Preview from '../../assets/EatLocal.png'
+import FGC_Preview from '../../assets/FGC.png'
+
 
 type Data = {
   id: number
   name: string
   description: string
-  image: string
+  image: StaticImageData
   deployLink: string
   githubRepo: string
 }[]
@@ -16,36 +22,36 @@ export default function handler(
   res.status(200).json([
     {
       id: 1,
-      name: "Project 1 Title",
-      description: "A cool project 1",
-      image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      name: "A&W Movie Time!",
+      description: "A movie information site",
+      image: AW_Preview,
+      deployLink: "https://rancid-tomatillos-ivory.vercel.app/",
+      githubRepo: "https://github.com/Ant-Shell/rancid-tomatillos"
 
     },
     {
       id: 2,
-      name: "Project 2 Title",
-      description: "A cool project 2",
-      image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      name: "Dungeons & Documents",
+      description: "A D&D character creator and monster manual",
+      image: DD_Preview,
+      deployLink: "https://ant-shell.github.io/dnd-stretch-tech/",
+      githubRepo: "https://github.com/Ant-Shell/dnd-stretch-tech"
     },
     {
       id: 3,
-      name: "Project 3 Title",
-      description: "A cool project 3",
-      image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      name: "Eat Local",
+      description: "A search site for local eateries",
+      image: EL_Preview,
+      deployLink: "https://eatlocal.vercel.app/",
+      githubRepo: "https://github.com/Ant-Shell/eatlocal"
     },
     {
       id: 4,
-      name: "Project 4 Title",
-      description: "A cool project 4",
-      image: "https://picsum.photos/200/300",
-      deployLink: "https://example.com/",
-      githubRepo: "https://github.com/Ant-Shell/"
+      name: "The Fighting Game Compendium",
+      description: "A fighting game info site",
+      image: FGC_Preview,
+      deployLink: "https://fighting-game-compendium.vercel.app/",
+      githubRepo: "https://github.com/Ant-Shell/fighting-game-compendium"
     },
   ]
   )
