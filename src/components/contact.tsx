@@ -9,9 +9,15 @@ const Contact = () => {
     <section id="contact" className="h-96 w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
       <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Contact Me</h2>
       <div className='flex justify-around'>
+      <a href='https://www.linkedin.com/in/anthonyshellman/' target="_blank" rel="noopener noreferrer">
         <SiLinkedin className={logoStyles} />
+      </a>
+      <a href='https://github.com/Ant-Shell' target="_blank" rel="noopener noreferrer">
         <VscGithub className={logoStyles} />
+      </a>
+      <a href="mailto:atshellman@gmail.com">
         <SiGmail className={logoStyles} />
+      </a>
       </div>
     </section>
   )
