@@ -2,6 +2,10 @@ import useSWR from 'swr'
 import fetcher from '@utilities/apiCalls'
 import ProjectsCard from './projectsCard'
 import { StaticImageData } from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Keyboard } from "swiper";
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 type ProjectData = {
   id: number
@@ -17,26 +21,31 @@ const Projects = () => {
 
   const projectList = data?.map(project => {
     const {id, name, description, image, deployLink, githubRepo} = project
-
     return (
-      <ProjectsCard
-      id={id}
-      name={name}
-      description={description}
-      image={image}
-      deployLink={deployLink}
-      githubRepo={githubRepo}
-      key={id}
-      />
+        <SwiperSlide key={id}>
+          <ProjectsCard
+            id={id}
+            name={name}
+            description={description}
+            image={image}
+            deployLink={deployLink}
+            githubRepo={githubRepo}
+            key={id}
+          />
+        </SwiperSlide>
     )
   })
 
   return (
-    <section id="projects" className="h-[55rem] w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
-      <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Projects</h2> {/* Array of mapped objects, swipeable */}
-      <div className="grid grid-rows-1 grid-flow-col py-5 w-screen overflow-scroll snap-x">
-        {projectList}
-      </div>
+    <section id="projects" className="h-[70rem] w-screen bg-[#293744] text-[#a89fa3] text-center snap-center">
+      <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Projects</h2>
+          <Swiper className='h-[17rem] w-[20rem] md:h-[40rem] md:w-[50rem] lg:h-[40rem] lg:w-[60rem] xl:h-[50rem] xl:w-[70rem]'
+            modules={[Navigation, Keyboard]}
+            navigation={true}
+            keyboard={true}
+          >
+            { projectList }
+          </Swiper>
     </section>
   )
 }
