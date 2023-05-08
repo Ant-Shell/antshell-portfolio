@@ -11,14 +11,13 @@ type Props = {
   githubRepo: string
 }
 
-const ProjectsCard:FC<Props> = ({name, description, image, deployLink, githubRepo}) => {
+const ProjectsCard:FC<Props> = ({id, name, description, image, deployLink, githubRepo}) => {
 
   return (
-    <section className="h-[50rem] w-[50rem] p-5 snap-end">
+    <section key={id} className="h-fit w-fit">
       <h3>{name}</h3>
       <a href={deployLink} target="_blank" rel="noopener noreferrer">
-        <Image src={image} alt={name + "preview"}
-        className="h-[30rem] w-[50rem]" />
+        <Image src={image} alt={name + "preview"}/>
       </a>
       <p>{description}</p>
       <p><a href={deployLink} target="_blank" rel="noopener noreferrer">Check it out!</a></p>
