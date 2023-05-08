@@ -7,6 +7,10 @@ import Link from 'next/link'
 const Header = () => {
   const [menuOptionVisibility, setMenuOptionVisibility] = useState<boolean>(false)
 
+  const bigTextStyling = 'hover:bg-[#535561] md:text-base lg:text-lg xl:text-xl'
+
+  const smallTextStyling ='hover:bg-[#535561] text-sm'
+
   const toggleMenu = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault()
     setMenuOptionVisibility(!menuOptionVisibility)
@@ -18,19 +22,19 @@ const Header = () => {
       <div className='flex justify-start px-8 hover:cursor-pointer' onClick={toggleMenu}>
         {
           menuOptionVisibility ?
-          <RxCross1 className='w-10 h-10'/>
+          <RxCross1 className='w-9 h-9'/>
           :
-          <GiHamburgerMenu className='w-10 h-10'/>
+          <GiHamburgerMenu className='w-9 h-9'/>
         }
       </div>
       {
         menuOptionVisibility ?
         <div className='p-5 flex justify-evenly'>
-          <Link href="#about" className='hover:bg-[#535561]'>About</Link>
-          <Link href="#experience" className='hover:bg-[#535561]'>Experience</Link>
-          <Link href="#skills" className='hover:bg-[#535561]'>Skills</Link>
-          <Link href="#projects" className='hover:bg-[#535561]'>Projects</Link>
-          <Link href="#contact" className='hover:bg-[#535561]'>Contact</Link>
+          <Link href="#about" className={smallTextStyling}>About</Link>
+          <Link href="#experience" className={smallTextStyling}>Experience</Link>
+          <Link href="#skills" className={smallTextStyling}>Skills</Link>
+          <Link href="#projects" className={smallTextStyling}>Projects</Link>
+          <Link href="#contact" className={smallTextStyling}>Contact</Link>
         </div>
         :
         null
@@ -38,12 +42,12 @@ const Header = () => {
     </header>
 
     <header className="hidden md:block h-28 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center snap-start">
-      <div className="flex justify-evenly">
-        <Link href="#about" className='hover:bg-[#535561]'>About</Link>
-        <Link href="#experience" className='hover:bg-[#535561]'>Experience</Link>
-        <Link href="#skills" className='hover:bg-[#535561]'>Skills</Link>
-        <Link href="#projects" className='hover:bg-[#535561]'>Projects</Link>
-        <Link href="#contact" className='hover:bg-[#535561]'>Contact</Link>
+      <div className="flex justify-evenly h-10">
+        <Link href="#about" className={`${bigTextStyling}`}>About</Link>
+        <Link href="#experience" className={`${bigTextStyling}`}>Experience</Link>
+        <Link href="#skills" className={`${bigTextStyling}`}>Skills</Link>
+        <Link href="#projects" className={`${bigTextStyling}`}>Projects</Link>
+        <Link href="#contact" className={`${bigTextStyling}`}>Contact</Link>
       </div>
     </header>
     </>
