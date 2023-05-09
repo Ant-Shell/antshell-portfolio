@@ -15,13 +15,13 @@ const ProjectsCard:FC<Props> = ({id, name, description, image, deployLink, githu
 
   return (
     <section key={id} className="h-fit w-fit">
-      <h3>{name}</h3>
+      <h3 className="text-lg md:text-xl lg:text-2xl xl:text-3xl p-5">{name}</h3>
       <a href={deployLink} target="_blank" rel="noopener noreferrer">
         <Image src={image} alt={name + "preview"}/>
       </a>
-      <p>{description}</p>
-      <p><a href={deployLink} target="_blank" rel="noopener noreferrer">Check it out!</a></p>
-      <p><a href={githubRepo} target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1">{description}</p>
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1"><a href={deployLink} target="_blank" rel="noopener noreferrer">Check it out!</a></p>
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1"><a href={githubRepo} target="_blank" rel="noopener noreferrer">GitHub repo</a></p>
     </section>
   )
 }
