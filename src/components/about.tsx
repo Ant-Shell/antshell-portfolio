@@ -6,15 +6,15 @@ const About = () => {
     <section id='about' className="h-[55rem] xl:h-[40rem] w-screen bg-[#293744] text-[#a89fa3]
     text-center snap-center overflow-scroll">
       <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>About Me</h2>
-      <div className='flex justify-center flex-col xl:flex-row xl:text-left'>
-        <div className='xl:px-8 basis-1/2 flex justify-center'>
+      <div className='flex justify-center flex-col xl:flex-row xl:text-left xl:h-[35rem]'>
+        <div className='p-8 basis-1/2 flex justify-center'>
         <Image 
         src={image}
         alt='Felicia Buitenwerf You Are Enough'
-        className='xl:h-full'
+        className='w-[25rem] h-[15rem] md:w-[35rem] md:h-[25rem] lg:w-[45rem] lg:h-[30rem]'
         />
         </div>
-        <div className='p-8 xl:p-0 basis-1/2 flex-1 text-left'>
+        <div className='p-8 xl:mr-5 basis-1/2 flex-1 text-left text-lg xl:text-xl'>
           <p>
           “Take a chance on yourself”.<br/>
           <br/>
