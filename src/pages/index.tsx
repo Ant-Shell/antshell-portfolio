@@ -25,7 +25,8 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='snap-y snap-mandatory bg-[#293744] text-[#a89fa3] text-center w-screen'>
+      <main className='snap-y snap-mandatory bg-[#293744] text-[#a89fa3] text-center w-screen
+      overflow-auto'>
         <div className='snap-always snap-start'>
           <Header />
         </div>
