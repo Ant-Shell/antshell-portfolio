@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-    <header className="md:hidden h-28 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center snap-start">
+    <header className="md:hidden h-28 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center">
       <div className='flex justify-start px-8 hover:cursor-pointer' onClick={toggleMenu}>
         {
           menuOptionVisibility ?
