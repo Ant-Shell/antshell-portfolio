@@ -12,7 +12,7 @@ const Home = () => {
   const HomeLink = () => {
     return (
       <div className='text-center flex justify-end p-8'>
-        <Link className='' href='/'>Back to Top</Link>
+        <Link className='hover:underline' href='/'>Back to Top</Link>
       </div>
     )
   }
@@ -25,8 +25,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='snap-y snap-mandatory bg-[#293744] text-[#a89fa3] text-center w-screen
-      overflow-auto'>
+      <main className='snap-y snap-mandatory bg-[#293744] text-[#a89fa3] text-center w-screen overflow-auto'>
         <div className='snap-always snap-start'>
           <Header />
         </div>

@@ -7,9 +7,9 @@ import Link from 'next/link'
 const Header = () => {
   const [menuOptionVisibility, setMenuOptionVisibility] = useState<boolean>(false)
 
-  const bigLinkStyling = 'hover:bg-[#535561] md:text-base lg:text-lg xl:text-xl h-6 w-24 rounded'
+  const bigLinkStyling = 'hover:underline md:text-base lg:text-lg xl:text-xl h-6 w-24'
 
-  const smallLinkStyling ='hover:bg-[#535561] text-sm h-5 w-20 rounded'
+  const smallLinkStyling ='hover:underline text-sm h-5 w-20'
 
   const toggleMenu = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault()
