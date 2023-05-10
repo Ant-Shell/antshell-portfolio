@@ -6,7 +6,7 @@ const About = () => {
     <section id='about' className="h-[90rem] md:h-[66rem] lg:h-[70rem] xl:h-[45rem] w-screen bg-[#293744] text-[#a89fa3]
     text-center snap-always snap-start overflow-auto">
       <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>About Me</h2>
-      <div className='flex justify-center flex-col xl:flex-row xl:text-left xl:h-[35rem]'>
+      <div className='flex justify-center flex-col xl:flex-row xl:text-left'>
         <div className='p-8 basis-1/2 flex justify-center'>
         <Image 
         src={image}
