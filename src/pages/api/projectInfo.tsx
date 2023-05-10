@@ -23,7 +23,7 @@ export default function handler(
     {
       id: 1,
       name: "A&W Movie Time!",
-      description: "A movie information site",
+      description: "Movie previewing application which provides users with comprehensive information on the latest releases",
       image: AW_Preview,
       deployLink: "https://rancid-tomatillos-ivory.vercel.app/",
       githubRepo: "https://github.com/Ant-Shell/rancid-tomatillos"
@@ -32,7 +32,7 @@ export default function handler(
     {
       id: 2,
       name: "Dungeons & Documents",
-      description: "A D&D character creator and monster manual",
+      description: "Dungeons & Dragons character creator app, complete with Monster Manual integration",
       image: DD_Preview,
       deployLink: "https://ant-shell.github.io/dnd-stretch-tech/",
       githubRepo: "https://github.com/Ant-Shell/dnd-stretch-tech"
@@ -40,7 +40,7 @@ export default function handler(
     {
       id: 3,
       name: "Eat Local",
-      description: "A search site for local eateries",
+      description: "Application designed to connect potential patrons with local restaurants, markets and breweries",
       image: EL_Preview,
       deployLink: "https://eatlocal.vercel.app/",
       githubRepo: "https://github.com/Ant-Shell/eatlocal"
@@ -48,7 +48,7 @@ export default function handler(
     {
       id: 4,
       name: "The Fighting Game Compendium",
-      description: "A fighting game info site",
+      description: "Application that enables users to view detailed information on some of the hottest titles in fighting games",
       image: FGC_Preview,
       deployLink: "https://fighting-game-compendium.vercel.app/",
       githubRepo: "https://github.com/Ant-Shell/fighting-game-compendium"
