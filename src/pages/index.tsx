@@ -16,14 +16,28 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='snap-y snap-mandatory overflow-scroll'>
-        <Header />
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Contact />
+      <main className='snap-y snap-mandatory'>
+        <div className='snap-always snap-start'>
+          <Header />
+        </div>
+        <div className='snap-always snap-start'>
+          <Hero />
+        </div>
+        <div className='snap-always snap-start'>
+          <About />
+        </div>
+        <div className='snap-always snap-start'>
+          <Experience />
+        </div>
+        <div className='snap-always snap-start'>
+          <Skills />
+        </div>
+        <div className='snap-always snap-start'>
+          <Projects />
+        </div>
+        <div className='snap-always snap-start'>
+          <Contact />
+        </div>
       </main>
     </>
   )
