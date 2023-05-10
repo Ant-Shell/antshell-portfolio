@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross1 } from 'react-icons/rx'
-import { animate } from "framer-motion"
-
 import Link from 'next/link'
+// import { animate } from "framer-motion"
+
 const Header = () => {
   const [menuOptionVisibility, setMenuOptionVisibility] = useState<boolean>(false)
 
@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-    <header className="md:hidden h-28 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center">
+    <header id='/' className="md:hidden h-28 py-8">
       <div className='flex justify-start px-8 hover:cursor-pointer' onClick={toggleMenu}>
         {
           menuOptionVisibility ?
@@ -41,7 +41,7 @@ const Header = () => {
       }
     </header>
 
-    <header className="hidden md:block h-28 w-screen bg-[#293744] text-[#a89fa3] py-8 text-center snap-start">
+    <header className="hidden md:block h-28 w-screen py-8 text-center snap-start">
       <div className="flex justify-evenly h-10 items-center">
         <Link href="#about" className={`${bigLinkStyling}`}>About</Link>
         <Link href="#experience" className={`${bigLinkStyling}`}>Experience</Link>
