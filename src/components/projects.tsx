@@ -37,7 +37,7 @@ const Projects = () => {
   })
 
   return (
-    <section id="projects" className="h-[30rem] md:h-[50rem] lg:h-[55rem] xl:h-[65rem] w-screen bg-[#293744] text-[#a89fa3] text-center">
+    <section id="projects" className="h-[30rem] md:h-[50rem] lg:h-[55rem] xl:h-[65rem]">
       <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Projects</h2>
           <Swiper className='h-[25rem] w-[20rem] md:h-[40rem] md:w-[50rem] lg:h-[50rem] lg:w-[60rem] xl:h-[60rem] xl:w-[70rem]'
             modules={[Navigation, Keyboard]}
