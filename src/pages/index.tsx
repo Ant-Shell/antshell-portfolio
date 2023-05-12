@@ -12,7 +12,7 @@ const Home = () => {
   const HomeLink = () => {
     return (
       <div className='text-center flex justify-end p-8'>
-        <Link className='hover:underline' href='/'>Back to Top</Link>
+        <Link className='hover:underline' href='#top'>Back to Top</Link>
       </div>
     )
   }
