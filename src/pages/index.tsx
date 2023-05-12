@@ -7,7 +7,9 @@ import Skills from '@components/skills'
 import Projects from '@components/projects'
 import Contact from '@components/contact'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
+import { HiOutlineSun, HiMoon } from "react-icons/hi"
 
 const Home = () => {
   const HomeLink = () => {
@@ -23,8 +25,11 @@ const Home = () => {
 
     return (
       <button onClick={():void => setTheme(theme === 'light' ? 'dark' : 'light')}
-      className='px-4 py-2 text-white bg-black rounded dark:bg-white dark:text-black'>
-        Mode Toggle
+      className='px-4 py-2 text-[#e1ded7] bg-[#293744] rounded dark:text-[#293744] dark:bg-[#e1ded7]'>
+       { theme === 'light' ?
+          <HiMoon className='h-5 w-5' /> :
+          <HiOutlineSun className='h-5 w-5' />
+        }
       </button>
     )
   }
