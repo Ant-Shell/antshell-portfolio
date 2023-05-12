@@ -7,6 +7,7 @@ import Skills from '@components/skills'
 import Projects from '@components/projects'
 import Contact from '@components/contact'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
 
 const Home = () => {
   const HomeLink = () => {
@@ -14,6 +15,17 @@ const Home = () => {
       <div className='text-center flex justify-end p-8'>
         <Link className='hover:underline' href='#top'>Back to Top</Link>
       </div>
+    )
+  }
+
+  const ModeButton = () => {
+    const { theme, setTheme } = useTheme()
+
+    return (
+      <button onClick={():void => setTheme(theme === 'light' ? 'dark' : 'light')}
+      className='px-4 py-2 text-white bg-black rounded dark:bg-white dark:text-black'>
+        Mode Toggle
+      </button>
     )
   }
 
@@ -25,9 +37,13 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='snap-y snap-mandatory bg-[#293744] text-[#a89fa3] text-center w-screen overflow-auto'>
+      <main className='snap-y snap-mandatory bg-[#e1ded7] text-[#293744]
+      dark:bg-[#293744] dark:text-[#a89fa3] text-center w-screen overflow-auto'>
         <div className='snap-always snap-start'>
           <Header />
+          <div className='flex justify-end px-8'>
+            <ModeButton />
+          </div>
         </div>
         <div className='snap-always snap-start'>
           <Hero />
