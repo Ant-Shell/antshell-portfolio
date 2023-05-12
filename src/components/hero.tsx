@@ -3,7 +3,7 @@ import headshot from '../assets/antshell_headshot.jpeg'
 
 const Hero = () => {
   return (
-    <section id="home" className='h-[40rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem] w-screen bg-[#293744] text-[#a89fa3] text-center flex flex-col
+    <section id="home" className='h-[40rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem] flex flex-col
     items-center justify-evenly'>
       <div className='h-[18rem] w-[16rem] md:h-[25rem] md:w-[22rem]
       lg:h-[31rem] lg:w-[28rem] xl:h-[37rem] xl:w-[34rem] rounded-full'>
