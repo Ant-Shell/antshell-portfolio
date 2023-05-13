@@ -43,7 +43,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='snap-y snap-mandatory bg-[#e1ded7] text-[#293744]
-      dark:bg-[#293744] dark:text-[#a89fa3] text-center w-screen overflow-auto'>
+      dark:bg-[#293744] dark:text-[#a89fa3] text-center w-screen overflow-auto select-none'>
         <div className='snap-always snap-start'>
           <Header />
           <div className='flex justify-end px-8 py-4'>
