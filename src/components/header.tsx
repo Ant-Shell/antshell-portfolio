@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-    <header id='/' className="md:hidden h-28 py-8">
+    <header id='#/top' className="md:hidden h-28 py-8">
       <div className='flex justify-start px-8 hover:cursor-pointer' onClick={toggleMenu}>
         {
           menuOptionVisibility ?

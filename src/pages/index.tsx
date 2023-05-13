@@ -7,13 +7,30 @@ import Skills from '@components/skills'
 import Projects from '@components/projects'
 import Contact from '@components/contact'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
+import { HiOutlineSun, HiMoon } from "react-icons/hi"
 
 const Home = () => {
   const HomeLink = () => {
     return (
       <div className='text-center flex justify-end p-8'>
-        <Link className='hover:underline' href='/'>Back to Top</Link>
+        <Link className='hover:underline' href='#top'>Back to Top</Link>
       </div>
+    )
+  }
+
+  const ModeButton = () => {
+    const { theme, setTheme } = useTheme()
+
+    return (
+      <button onClick={():void => setTheme(theme === 'light' ? 'dark' : 'light')}
+      className='px-4 py-2 text-[#e1ded7] bg-[#293744] rounded dark:text-[#293744]
+      dark:bg-[#e1ded7] h-9 w-13'>
+       { theme === 'light' ?
+          <HiMoon className='h-5 w-5' /> :
+          <HiOutlineSun className='h-5 w-5' />
+        }
+      </button>
     )
   }
 
@@ -25,9 +42,13 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='snap-y snap-mandatory bg-[#293744] text-[#a89fa3] text-center w-screen overflow-auto'>
+      <main className='snap-y snap-mandatory bg-[#e1ded7] text-[#293744]
+      dark:bg-[#293744] dark:text-[#a89fa3] text-center w-screen overflow-auto select-none'>
         <div className='snap-always snap-start'>
           <Header />
+          <div className='flex justify-end px-8 py-4'>
+            <ModeButton />
+          </div>
         </div>
         <div className='snap-always snap-start'>
           <Hero />
