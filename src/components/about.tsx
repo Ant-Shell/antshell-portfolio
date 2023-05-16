@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import image from '../assets/felicia-buitenwerf-_z1fydm6azE-unsplash.jpg'
+import image from 'public/felicia-buitenwerf-_z1fydm6azE-unsplash.jpg'
+
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import headshot from '../assets/antshell_headshot.jpeg'
+import headshot from 'public/antshell_headshot.jpeg'
 
 const Hero = () => {
   return (
