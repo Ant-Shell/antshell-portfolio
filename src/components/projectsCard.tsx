@@ -20,8 +20,12 @@ const ProjectsCard:FC<Props> = ({id, name, description, image, deployLink, githu
       <a href={deployLink} target="_blank" rel="noopener noreferrer">
         <Image src={image} alt={name + "preview"}/>
       </a>
-      <p className="md:text-lg lg:text-xl xl:text-2xl p-1"><a href={deployLink} target="_blank" rel="noopener noreferrer">Click here to check it out!</a></p>
-      <p className="md:text-lg lg:text-xl xl:text-2xl p-1"><a href={githubRepo} target="_blank" rel="noopener noreferrer">Documentation can be found here</a></p>
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1">
+        <a href={deployLink} target="_blank" rel="noopener noreferrer">Click here to check it out!</a>
+      </p>
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1">
+        <a href={githubRepo} target="_blank" rel="noopener noreferrer">Documentation can be found here</a>
+      </p>
     </section>
   )
 }

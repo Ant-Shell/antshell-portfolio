@@ -8,10 +8,10 @@ const Hero = () => {
       <div className='h-[18rem] w-[16rem] md:h-[25rem] md:w-[22rem]
       lg:h-[31rem] lg:w-[28rem] xl:h-[37rem] xl:w-[34rem]'>
         <Image 
-        src={headshot}
-        alt="Ant-Shell headshot"
-        className='rounded-full'
-        priority={true}
+          src={headshot}
+          alt="Ant-Shell headshot"
+          className='rounded-full'
+          priority={true}
         />
       </div>
       <div className='h-20 xl:h-32 w-screen xl:mb-10'>
