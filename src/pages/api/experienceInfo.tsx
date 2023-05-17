@@ -1,10 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { StaticImageData } from 'next/image'
-import HA_Logo from '../../assets/HA_Logo.png'
-import G_Logo from '../../assets/G_Logo.jpeg'
-import CL_Logo from '../../assets/CL_Logo.png'
-import T_Logo from '../../assets/T_Logo.png'
-import MSU_Logo from '../../assets/MSU_Logo.png'
+import HA_Logo from 'public/HA_Logo.png'
+import G_Logo from 'public/G_Logo.jpeg'
+import CL_Logo from 'public/CL_Logo.png'
+import T_Logo from 'public/T_Logo.png'
+import MSU_Logo from 'public/MSU_Logo.png'
 
 type Data = {
   id: number
@@ -43,8 +43,8 @@ export default function handler(
         duration: "May 2021 - Aug 2021",
         logo: CL_Logo,
         overview: [
-          "- Managed and maintained decentralized blockchain node applications in cloud-based environments",
-          "- Ensured 24/7 performance of oracle nodes through shift-based on-call rotation"
+          "- Managed and maintained decentralized blockchain applications in cloud-based environments",
+          "- Ensured optimal performance through shift-based on-call rotation"
         ],
       },
       {

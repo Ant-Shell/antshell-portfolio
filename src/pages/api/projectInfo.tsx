@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { StaticImageData } from 'next/image'
-import AW_Preview from '../../assets/A&W.png'
-import DD_Preview from '../../assets/D&D.png'
-import EL_Preview from '../../assets/EatLocal.png'
-import FGC_Preview from '../../assets/FGC.png'
+import AW_Preview from 'public/A&W.png'
+import DD_Preview from 'public/D&D.png'
+import EL_Preview from 'public/EatLocal.png'
+import FGC_Preview from 'public/FGC.png'
 
 
 type Data = {
