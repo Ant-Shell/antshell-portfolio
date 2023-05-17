@@ -28,7 +28,7 @@ const Home = () => {
     return (
       <button onClick={():void => setTheme(theme === 'light' ? 'dark' : 'light')}
       className='px-4 py-2 text-[#e1ded7] bg-[#293744] rounded dark:text-[#293744]
-      dark:bg-[#e1ded7] h-9 w-13'>
+      dark:bg-[#e1ded7] h-9 w-13' aria-label="Button for light and dark mode">
        { theme === 'light' ?
           <HiMoon className='h-5 w-5' /> :
           <HiOutlineSun className='h-5 w-5' />
