@@ -69,7 +69,7 @@ It features responsiveness across a multitude of devices, a dark/light mode brow
 
 ## Notes
 
-After a challenging nine-month bootcamp experience at [Turing School of Software & Design](https://turing.edu/), I wanted to tackle a new challenge. However, my goal this time was to take things slow, learn at my own pace and create a lightweight, straightforward application. That’s how I knew, it was time to make a portfolio. I took time to learn and implement Next.js, TailwindCSS, and have some fun!
+After a challenging nine-month bootcamp experience at [Turing School of Software & Design](https://turing.edu/), I wanted to tackle a new challenge. However, my goal this time was to take things slow, learn at my own pace and create a lightweight, straightforward application. What better way to do that than making a portfolio? It was nice to learn and implement Next.js, TailwindCSS, and have some fun!
 
 I intend to improve on this portfolio over time, with more skills that I have learned. When the time is right, I may even totally create a new portfolio, in a totally different framework. It feels great to have options!
 
