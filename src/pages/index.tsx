@@ -11,6 +11,9 @@ import { useTheme } from 'next-themes'
 import { HiOutlineSun, HiMoon } from "react-icons/hi"
 
 const Home = () => {
+
+  const snap = 'snap-always snap-start'
+  
   const HomeLink = () => {
     return (
       <div className='text-center flex justify-end p-8'>
@@ -44,32 +47,32 @@ const Home = () => {
       </Head>
       <main className='snap-y snap-mandatory bg-[#e1ded7] text-[#293744]
       dark:bg-[#293744] dark:text-[#a89fa3] text-center w-screen overflow-auto select-none'>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <Header />
           <div className='flex justify-end px-8 py-4'>
             <ModeButton />
           </div>
         </div>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <Hero />
         </div>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <About />
           <HomeLink/>
         </div>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <Experience />
           <HomeLink/>
         </div>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <Skills />
           <HomeLink/>
         </div>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <Projects />
           <HomeLink/>
         </div>
-        <div className='snap-always snap-start'>
+        <div className={snap}>
           <Contact />
           <HomeLink/>
         </div>
