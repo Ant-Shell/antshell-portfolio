@@ -26,7 +26,7 @@ type SingleExperienceDetails = {
 }
 
 const Experience = () => {
-  const { data, error, isLoading } = useSWR<ExperienceData>('/api/experienceInfo', fetcher)
+  const { data } = useSWR<ExperienceData>('/api/experienceInfo', fetcher)
   const [description, setDescription] = useState<SingleExperienceDetails | undefined>(undefined)
 
   const showCompanyLogos = (e:React.MouseEvent<HTMLDivElement, MouseEvent>, id:number):void => {
@@ -80,8 +80,7 @@ const Experience = () => {
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Experience</h2>
         <div className="flex justify-around flex-wrap">
           {description === undefined ?
-            logoList
-            :
+            logoList :
             singleExperience(description)
           }
         </div>
