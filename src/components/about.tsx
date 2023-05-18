@@ -27,9 +27,12 @@ const About = () => {
           After working in retail and customer service, I went back to school as an adult
           and obtained my degree in Computer Information systems. 
           I then went on to be a Systems Administrator for nearly a decade.
-          However, once again listening to my inner voice and attending the 
-          Turing School of Software & Design
-          led me on my current journey - in which I am grateful.
+          However, once again listening to my inner voice and attending the&nbsp;
+          <span className='inline'>
+            <a href='https://turing.edu/' target="_blank" rel="noopener noreferrer"
+            aria-label="Link to turing.edu">Turing School of Software & Design</a>
+          </span>
+          &nbsp;led me on my current journey - in which I am grateful.
           </p>
           <br/>
           <p>
