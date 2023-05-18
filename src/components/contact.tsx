@@ -10,11 +10,11 @@ const Contact = () => {
       <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Contact Me</h2>
       <div className='flex justify-around'>
       <a href='https://www.linkedin.com/in/anthonyshellman/' target="_blank" rel="noopener noreferrer" 
-        aria-label="Link to anthonyshellman LinkedIn profile">
+        aria-label="Link to linkedin.com/in/anthonyshellman">
         <SiLinkedin className={`${logoStyles} text-[#2967bc]`} />
       </a>
       <a href='https://github.com/Ant-Shell' target="_blank" rel="noopener noreferrer" role="button"
-        aria-label="Link to Ant-Shell GitHub profile">
+        aria-label="Link to github.com/Ant-Shell">
         <VscGithub className={`${logoStyles} text-[#000]`} />
       </a>
       <a href="mailto:atshellman@gmail.com" role="button" 
