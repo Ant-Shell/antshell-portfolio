@@ -14,7 +14,7 @@
     <br />
     <a href="https://github.com/Ant-Shell/antshell-portfolio"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://antshell-portfolio.vercel.app/"><strong>Check it out! »</strong></a>
+    <a href="https://www.ant-shell.me/"><strong>Check it out! »</strong></a>
   </p>
 </div>
 
@@ -55,7 +55,7 @@ It features responsiveness across a multitude of devices, a dark/light mode brow
 
 ## Setup
 
-- Please visit the [deployed site](https://antshell-portfolio.vercel.app/)
+- Please visit the [deployed site](https://www.ant-shell.me/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
