@@ -10,7 +10,7 @@
 <!-- HEADER -->
   <h3 align="center">Ant-Shell Portfolio</h3>
   <p align="center">
-    A portfolio, showcasing work by Anthony Shellman
+    A portfolio website, showcasing work and created by Anthony Shellman
     <br />
     <a href="https://github.com/Ant-Shell/antshell-portfolio"><strong>Explore the docs »</strong></a>
     <br />
@@ -95,11 +95,10 @@ I intend to improve on this portfolio over time, with more skills that I have le
 
 ## Roadmap
 
-- [ ] Add Animations
+- [ ] Add (more) animations
 - [ ] Testing with [Jestjs](https://jestjs.io/)
-- [ ] Implement a Modal
+- [ ] Implement a modal
 - [ ] Refactor [Swiperjs](https://swiperjs.com/) code
-- [ ] Update image(s)
 - [ ] Troubleshoot [y-scroll snap](https://tailwindcss.com/docs/scroll-snap-type) behavior
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
