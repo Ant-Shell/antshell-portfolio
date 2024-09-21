@@ -2,10 +2,10 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <section id='about' className="h-[90rem] md:h-[66rem] lg:h-[70rem] xl:h-[45rem] overflow-auto">
-      <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>About Me</h2>
+    <section id='about' className="h-[80rem] md:h-[66rem] lg:h-[70rem] xl:h-[45rem] pt-4">
+      <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4'>About Me</h2>
       <div className='flex justify-center flex-col xl:flex-row xl:text-left'>
-        <div className='p-8 basis-1/2 flex justify-center'>
+        <div className='p-4 basis-1/2 flex justify-center'>
         <Image 
         src='/felicia-buitenwerf-unsplash.jpg'
         alt='Felicia Buitenwerf You Are Enough'
@@ -14,7 +14,7 @@ const About = () => {
         height={500}
         />
         </div>
-        <div className='p-8 xl:mr-5 basis-1/2 flex-1 text-left text-lg xl:text-xl'>
+        <div className='p-4 xl:mr-5 basis-1/2 flex-1 text-left text-lg xl:text-xl'>
           <p>
           “Take a chance on yourself”.<br/>
           <br/>

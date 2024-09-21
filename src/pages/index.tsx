@@ -16,7 +16,7 @@ const Home = () => {
   
   const HomeLink = () => {
     return (
-      <div className='text-center flex justify-end p-8'>
+      <div className='text-center flex justify-end p-4'>
         <Link className='hover:underline' href='#top'>Back to Top</Link>
       </div>
     )

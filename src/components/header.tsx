@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-    <header id='#/top' className="md:hidden h-28 py-8">
+    <header id='#/top' className="md:hidden h-28 py-4">
       <div className='flex justify-start px-8 hover:cursor-pointer' onClick={toggleMenu}>
         {
           menuOptionVisibility ?
@@ -39,7 +39,7 @@ const Header = () => {
       }
     </header>
 
-    <header className="hidden md:block h-28 w-screen py-8 text-center snap-start">
+    <header className="hidden md:block h-28 w-screen py-4 text-center snap-start">
       <div className="flex justify-evenly h-10 items-center">
         <Link href="#about" className={`${bigLinkStyling}`}>About</Link>
         <Link href="#experience" className={`${bigLinkStyling}`}>Experience</Link>
