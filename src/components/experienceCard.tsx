@@ -32,7 +32,13 @@ const ExperienceCard: FC<Props> = ({name, role, location, duration, logo, overvi
         </button>
       </div>
       <div className="px-5 text-base md:text-lg lg:text-xl xl:text-2xl flex">
-        <Image className="h-10 w-10 p-1" src={logo} alt={`${name} + logo`}/>
+        <Image
+          className="h-10 w-10 p-1"
+          src={logo}
+          alt={`${name} + logo`}
+          width={500}
+          height={500}
+        />
         <div>
         <h3 className="font-bold">{name}</h3>
         <p className="font-medium">{role}</p>
