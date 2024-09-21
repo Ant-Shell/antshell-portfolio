@@ -11,7 +11,7 @@ type ExperienceData = {
   role: string
   location: string
   duration: string
-  logo: StaticImageData
+  logo: StaticImageData | string
   overview: Array<string>
 }[]
 
@@ -21,7 +21,7 @@ type SingleExperienceDetails = {
   role: string
   location: string
   duration: string
-  logo: StaticImageData
+  logo: StaticImageData | string
   overview: Array<string>
 }
 
@@ -51,6 +51,8 @@ const Experience = () => {
         alt={name + "logo"}
         className='h-28 w-28 md:h-36 md:w-36
           lg:h-48 lg:w-48 xl:h-60 xl:w-60 mt-2'
+        width={500}
+        height={500}
         />
       </div>
     )
@@ -75,16 +77,14 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" className="h-[30rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem]">
-      <div className="py-8">
-        <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-8'>Experience</h2>
+    <section id="experience" className="h-[25rem] lg:h-[30rem] xl:h-[35rem]">
+        <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4'>Experience</h2>
         <div className="flex justify-around flex-wrap">
           {description === undefined ?
             logoList :
             singleExperience(description)
           }
         </div>
-      </div>
     </section>
   )
 }

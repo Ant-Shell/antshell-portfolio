@@ -1,10 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { StaticImageData } from 'next/image'
-import HA_Logo from 'public/HA_Logo.png'
-import G_Logo from 'public/G_Logo.jpeg'
-import CL_Logo from 'public/CL_Logo.png'
-import T_Logo from 'public/T_Logo.png'
-import MSU_Logo from 'public/MSU_Logo.png'
 
 type Data = {
   id: number
@@ -13,7 +8,7 @@ type Data = {
   location: string
   duration: string
   overview: Array<string>
-  logo: StaticImageData
+  logo: StaticImageData | string
 }[]
 
 export default function handler(
@@ -28,7 +23,7 @@ export default function handler(
         role: "Software Engineering Student",
         location: "Denver, CO",
         duration: "May 2022 - Jan 2023",
-        logo: T_Logo,
+        logo: '/T_Logo.png',
         overview: [
           "- Front End Engineering Certificate",
           "- 1700 hours of programming experience",
@@ -41,7 +36,7 @@ export default function handler(
         role: "Network and Systems Administrator",
         location: "Remote",
         duration: "May 2021 - Aug 2021",
-        logo: CL_Logo,
+        logo: '/CL_Logo.png',
         overview: [
           "- Managed and maintained decentralized blockchain applications in cloud-based environments",
           "- Ensured optimal performance through shift-based on-call rotation"
@@ -53,7 +48,7 @@ export default function handler(
         role: "Server Administrator",
         location: "Denver, CO",
         duration: "Feb 2019 - May 2021",
-        logo: G_Logo,
+        logo: '/G_Logo.jpeg',
         overview: [
           "- Administered server life-cycles across multiple co-locations",
           "- Improved existing technical infrastructure",
@@ -66,7 +61,7 @@ export default function handler(
         role: "Systems Administrator",
         location: "Golden, CO",
         duration: "Feb 2012 - Feb 2019",
-        logo: HA_Logo,
+        logo: '/HA_Logo.png',
         overview: [
           "- Ensured infrastructure integrity via regular maintenance, troubleshooting and issue remediation",
           "- Researched, evaluated and deployed new hardware and software"
@@ -78,7 +73,7 @@ export default function handler(
         role: "Student",
         location: "Denver, CO",
         duration: "May 2010 - Dec 2016",
-        logo: MSU_Logo,
+        logo: '/MSU_Logo.png',
         overview: [
           "- Bachelor's Degree, Computer Information Systems"
         ]
