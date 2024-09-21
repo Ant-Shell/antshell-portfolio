@@ -9,7 +9,7 @@ const Skills = () => {
   const logoStyles = "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 xl:h-36 xl:w-36"
 
   return (
-    <section id="skills" className="h-[38rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem]">
+    <section id="skills" className="h-[35rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem]">
       <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4'>Skills</h2>
       <div className="p-4 grid grid-rows-4 grid-cols-3 gap-4 justify-items-center">
         <a href='https://react.dev/' target="_blank" rel="noopener noreferrer"
