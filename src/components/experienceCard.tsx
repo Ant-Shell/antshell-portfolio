@@ -9,7 +9,7 @@ type Props = {
   role: string
   location: string
   duration: string
-  logo: StaticImageData
+  logo: StaticImageData | string
   overview: Array<string>
   showSingleExperience: (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
