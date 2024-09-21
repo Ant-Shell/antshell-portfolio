@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import image from 'public/felicia-buitenwerf-_z1fydm6azE-unsplash.jpg'
-
 
 const About = () => {
   return (
@@ -9,9 +7,11 @@ const About = () => {
       <div className='flex justify-center flex-col xl:flex-row xl:text-left'>
         <div className='p-8 basis-1/2 flex justify-center'>
         <Image 
-        src={image}
+        src='/felicia-buitenwerf-unsplash.jpg'
         alt='Felicia Buitenwerf You Are Enough'
         className='w-[25rem] h-[15rem] md:w-[35rem] md:h-[25rem] lg:w-[45rem] lg:h-[30rem]'
+        width={500}
+        height={500}
         />
         </div>
         <div className='p-8 xl:mr-5 basis-1/2 flex-1 text-left text-lg xl:text-xl'>
