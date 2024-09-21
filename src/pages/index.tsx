@@ -58,19 +58,15 @@ const Home = () => {
         </div>
         <div className={snap}>
           <About />
-          <HomeLink/>
         </div>
         <div className={snap}>
           <Experience />
-          <HomeLink/>
         </div>
         <div className={snap}>
           <Skills />
-          <HomeLink/>
         </div>
         <div className={snap}>
           <Projects />
-          <HomeLink/>
         </div>
         <div className={snap}>
           <Contact />
