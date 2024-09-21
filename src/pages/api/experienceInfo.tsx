@@ -16,9 +16,47 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   res.status(200).json(
-    [
+    [ {
+      id: 1,
+      name: "SumUp",
+      role: "Junior Software Engineer",
+      location: "Boulder, CO",
+      duration: "May 2024 - Aug 2024",
+      logo: '/SU_Logo.png',
+      overview: [
+        "- Developed a social media presence application using agile methodologies",
+        "- Designed and implemented an engaging front-end user experience",
+        "- Continuously improved React application performance through code reviews, feedback, and refactoring",
+        "- Translated high-quality designs into compelling user interfaces"
+      ]
+    }, {
+      id: 2,
+      name: "makeitMVP",
+      role: "Software Engineer Apprentice",
+      location: "Remote",
+      duration: "Jan 2024 - May 2024",
+      logo: '/MVP-Logo.png',
+      overview: [
+        "- Engaged in agile methodologies to collaborate effectively with a cross-functional team",
+        "- Developed and maintained key functionality in new and existing features",
+        "- Recognized with the “Growth Award” for demonstrating exceptional advancement in skills and capabilities throughout project duration"
+      ]
+    }, {
+      id: 3,
+      name: "Helio Home",
+      role: "Software Engineer Intern",
+      location: "Hybrid",
+      duration: "Sep 2023 - Dec 2023",
+      logo: '/HH_Logo.png',
+      overview: [
+        "- Collaborated with team members through pair programming, fostering effective teamwork",
+        "- Conducted independent research to gather information and proactively solve complex problems",
+        "- Developed an internally facing (Retool) application tailored for the Sales Team, facilitating efficient information display",
+        "- Actively participated in manual QA testing, covering user flows, regression testing, and other critical aspects"
+      ]
+    },
       {
-        id: 1,
+        id: 4,
         name: "Turing School of Software & Design",
         role: "Software Engineering Student",
         location: "Denver, CO",
@@ -31,7 +69,7 @@ export default function handler(
         ]
       },
       {
-        id: 2,
+        id: 5,
         name: "Chainlink Labs",
         role: "Network and Systems Administrator",
         location: "Remote",
@@ -43,7 +81,7 @@ export default function handler(
         ],
       },
       {
-        id: 3,
+        id: 6,
         name: "Gensler",
         role: "Server Administrator",
         location: "Denver, CO",
@@ -56,7 +94,7 @@ export default function handler(
         ]
       },
       {
-        id: 4,
+        id: 7,
         name: "HomeAdvisor",
         role: "Systems Administrator",
         location: "Golden, CO",
@@ -68,7 +106,7 @@ export default function handler(
         ]
       },
       {
-        id: 5,
+        id: 8,
         name: "Metropolitan State University of Denver",
         role: "Student",
         location: "Denver, CO",
