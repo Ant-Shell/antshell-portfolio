@@ -12,7 +12,7 @@ type ProjectData = {
   id: number
   name: string
   description: string
-  image: StaticImageData
+  image: StaticImageData | string
   deployLink: string
   githubRepo: string
 }[]
