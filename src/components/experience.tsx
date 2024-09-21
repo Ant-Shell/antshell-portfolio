@@ -77,13 +77,15 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" className="h-[30rem] lg:h-[30rem] xl:h-[35rem]">
+    <section id="experience" className="h-[30rem] lg:h-[35rem] xl:h-[40rem] 2xl:h-[45rem]">
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4'>Experience</h2>
-        <div className="flex justify-around flex-wrap">
-          {description === undefined ?
-            logoList :
-            singleExperience(description)
-          }
+        <div className='flex justify-center'>
+          <div className="flex justify-evenly flex-wrap 2xl:w-[70%]">
+            {description === undefined ?
+              logoList :
+              singleExperience(description)
+            }
+          </div>
         </div>
     </section>
   )
