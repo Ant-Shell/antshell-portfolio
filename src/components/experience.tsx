@@ -50,7 +50,7 @@ const Experience = () => {
         src={logo}
         alt={name + "logo"}
         className='h-28 w-28 md:h-36 md:w-36
-          lg:h-48 lg:w-48 xl:h-60 xl:w-60 mt-2 rounded-lg'
+          lg:h-48 lg:w-48 xl:h-60 xl:w-60 mt-2 rounded-lg hover:-translate-y-1'
         width={500}
         height={500}
         />
@@ -80,7 +80,7 @@ const Experience = () => {
     <section id="experience" className="h-[30rem] lg:h-[35rem] xl:h-[40rem] 2xl:h-[45rem]">
         <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl py-4'>Experience</h2>
         <div className='flex justify-center'>
-          <div className="flex justify-evenly flex-wrap 2xl:w-[70%]">
+          <div className="flex justify-evenly flex-wrap 2xl:w-[70%] gap-y-1 md:gap-y-3">
             {description === undefined ?
               logoList :
               singleExperience(description)
