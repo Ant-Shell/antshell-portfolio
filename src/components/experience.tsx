@@ -50,7 +50,7 @@ const Experience = () => {
         src={logo}
         alt={name + "logo"}
         className='h-28 w-28 md:h-36 md:w-36
-          lg:h-48 lg:w-48 xl:h-60 xl:w-60 mt-2 rounded-lg hover:-translate-y-1'
+          lg:h-48 lg:w-48 xl:h-60 xl:w-60 mt-2 rounded-lg hover:-translate-y-1 hover:opacity-95'
         width={500}
         height={500}
         />

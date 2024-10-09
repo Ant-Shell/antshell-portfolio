@@ -3,7 +3,7 @@ import { VscGithub } from "react-icons/vsc"
 
 const Contact = () => {
 
-  const logoStyles = "h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-24 xl:w-24 hover:-translate-y-1"
+  const logoStyles = "h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-24 xl:w-24 hover:-translate-y-1 hover:opacity-95"
 
   return (
     <section id="contact" className="h-52 md:h-80">
