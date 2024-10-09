@@ -6,7 +6,7 @@ import { TbBrandCypress } from "react-icons/tb";
 
 const Skills = () => {
 
-  const logoStyles = "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 xl:h-36 xl:w-36"
+  const logoStyles = "h-24 w-24 md:h-28 md:w-28 lg:h-32 lg:w-32 xl:h-36 xl:w-36 hover:-translate-y-1 hover:opacity-95"
 
   return (
     <section id="skills" className="h-[35rem] md:h-[45rem] lg:h-[50rem] xl:h-[55rem]">
