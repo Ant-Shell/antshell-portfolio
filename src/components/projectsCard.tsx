@@ -25,10 +25,10 @@ const ProjectsCard:FC<Props> = ({id, name, description, image, deployLink, githu
         height={615}
         />
       </a>
-      <p className="md:text-lg lg:text-xl xl:text-2xl p-1">
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1 hover:underline">
         <a href={deployLink} target="_blank" rel="noopener noreferrer">Click here to check it out!</a>
       </p>
-      <p className="md:text-lg lg:text-xl xl:text-2xl p-1">
+      <p className="md:text-lg lg:text-xl xl:text-2xl p-1 hover:underline">
         <a href={githubRepo} target="_blank" rel="noopener noreferrer">Documentation can be found here</a>
       </p>
     </section>
